@@ -1,2 +1,2 @@
 # github_live
-Live repository.
+Programs to help me improve my coding skills.
