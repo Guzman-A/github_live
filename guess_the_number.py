@@ -1,9 +1,5 @@
 import random
 
-
-
-
-
 class BluePrint():
 
     def game(self, user_guess, again):
@@ -13,7 +9,7 @@ class BluePrint():
         x = random.randint(1,10)
 
         if(int(user_guess) == x):
-            print("You Mind Reading Son Of Gun!")
+            print("Mind Reader!")
             print("Computer guessed {}".format(x))
 
         else:
@@ -25,15 +21,8 @@ class BluePrint():
             if(again == 'Y'):
                 main()
 
-
-
-
             else:
-                print("Ya QUITTER!")
-
-
-
-
+                print("BEEP BOOP, EXITING PROGRAM!")
 
 def main():
     again = None
@@ -41,7 +30,6 @@ def main():
     instance = BluePrint()
     user_guess = input("Guess a number from 1 - 10: ")
     instance.game(user_guess, again)
-
 
 if __name__ == "__main__":
     main()
